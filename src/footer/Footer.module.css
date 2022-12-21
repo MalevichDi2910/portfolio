@@ -1,0 +1,33 @@
+.footerBlock {
+    min-height: 50vh;
+    background-color: #cbe5af;
+}
+
+.footerContainer {
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    background-color: lightgrey;
+}
+
+.footerSquares {
+    max-width: 700px;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+
+.footerText {
+    background-color: lightgrey;
+}
