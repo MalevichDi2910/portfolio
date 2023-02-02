@@ -23,7 +23,7 @@
     box-sizing: border-box;
 }
 
-input, textarea {
+.contactsForm input, .contactsForm textarea {
     padding: 12px;
     box-sizing: border-box;
     margin-bottom: 5px;
