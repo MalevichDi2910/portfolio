@@ -1,0 +1,26 @@
+.nav {
+   width: 300px;
+   display: flex;
+   justify-content: space-between;
+   text-decoration: none;
+
+   a {
+      text-decoration: none;
+      color: #c4cfde;
+      margin: -26px;
+      position: relative;
+      transition: 0.4s;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+   }
+
+   a:hover {
+      color: #ff014f;
+   }
+
+}
+
+

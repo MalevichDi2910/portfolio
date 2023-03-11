@@ -1,6 +1,8 @@
+@import "../common/styles/sass/variables.scss";
+
 .footerBlock {
     min-height: 50vh;
-    background-color: #cbe5af;
+    background-color: $bgColor;
 }
 
 .footerContainer {
