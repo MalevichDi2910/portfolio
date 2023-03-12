@@ -1,19 +1,21 @@
+@import "../../common/styles/sass/variables";
+
 .skill {
-    width: 250px;
-    background-color: #e9e9e9;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     box-sizing: border-box;
+    color: white;
+    font-family: $titleFontFamily;
+
+    .icon {
+        height: 60px;
+        width: 60px;
+        background-size: cover;
+    }
 }
 
-.icon {
-    height: 60px;
-    width: 60px;
-    background-color: gray;
-}
 
-.description {
 
-}
