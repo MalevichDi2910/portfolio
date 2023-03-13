@@ -2,7 +2,6 @@
 
 .skillsBlock {
     min-height: 100vh;
-    //background-color: $bgColor;
     background-image: url("https://wallpaperaccess.com/full/1947484.jpg");
     background-size: cover;
 }
@@ -18,7 +17,7 @@
 }
 
 .skills {
-    border: 1px solid;
+    max-width: 1000px;
     width: 100%;
     display: flex;
     justify-content: space-between;

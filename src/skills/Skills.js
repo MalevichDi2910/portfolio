@@ -10,7 +10,7 @@ import redux from "../assets/image/redux.svg";
 import typescript from "../assets/image/typescript.svg";
 import html5 from "../assets/image/html5.svg";
 import api from "../assets/image/api.svg";
-import github from "../assets/image/github.svg";
+import git from "../assets/image/git.svg";
 import storybook from "../assets/image/storybook.svg";
 import jest from "../assets/image/jest.svg";
 
@@ -44,8 +44,8 @@ export const Skills = () => {
         backgroundImage: `url(${api})`
     };
 
-    const githubIcon = {
-        backgroundImage: `url(${github})`
+    const gitIcon = {
+        backgroundImage: `url(${git})`
     };
 
     const storybookIcon = {
@@ -71,7 +71,7 @@ export const Skills = () => {
                     <Skill style={apiIcon} title={'REST API'} />
                     <Skill style={jestIcon} title={'TDD - JEST'} />
                     <Skill style={storybookIcon} title={'STORYBOOK'} />
-                    <Skill style={githubIcon} title={'GITHUB'} />
+                    <Skill style={gitIcon} title={'GIT'} />
                 </div>
             </div>
         </div>
