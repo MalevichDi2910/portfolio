@@ -2,13 +2,13 @@
 
 .contactsBlock {
     min-height: 100vh;
-    background: $bgColor;
+    background-image: url("https://thumbs.dreamstime.com/b/customer-support-concept-customer-support-hotline-contact-us-people-connection-man-holding-mobile-smartphone-customer-260635784.jpg");
+    background-size: cover;
     padding: 100px 0;
 
     .contactsContainer {
+        display: flex;
         flex-direction: column;
-
-
 
         span {
             color: $subtitle;
@@ -26,26 +26,23 @@
         }
 
         .contactsForm {
-            max-width: 380px;
+            max-width: 700px;
             width: 100%;
-            border: 1px solid;
+            background: #1e2024;
             display: flex;
             flex-direction: column;
+            align-items: center;
             justify-content: space-between;
             margin-bottom: 20px;
             flex-wrap: wrap;
             box-sizing: border-box;
-
-            //input, textarea {
-            //    padding: 12px;
-            //    box-sizing: border-box;
-            //    margin-bottom: 5px;
-            //    resize: none;
-            //}
-            //
-            //textarea {
-            //    height: 180px;
-            //}
+            box-shadow:  10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+            padding: 30px;
+            border-radius: 10px;
+            height: 100%;
+            @media screen and (max-width: 767px) {
+                margin: 40px 0 0 0;
+            }
 
             .blockInfo {
                 padding-right: 15px;
@@ -58,11 +55,10 @@
                 font-family: $titleFontFamily;
                 margin-bottom: 14px;
                 text-align: left;
-                display: block;
-                flex-direction: column;
 
                 input {
                     background: #191b1e;
+                    width: 600px;
                     border-radius: 6px;
                     height: 55px;
                     border: 2px solid #191b1e;
@@ -72,7 +68,8 @@
                     color: $textColor;
                     box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
                     letter-spacing: 1px;
-
+                    transition: 0.4s;
+                    margin-top: 10px;
                     &:focus {
                         outline: none;
                         border: 2px solid #ff014f;
@@ -81,11 +78,13 @@
 
                 textarea {
                     min-height: 216px;
+                    width: 600px;
                     background: #191b1e;
                     border-radius: 6px;
                     transition: 0.4s;
                     border: 2px solid #191b1e;
                     padding: 10px 15px;
+                    margin-top: 10px;
                     font-size: 14px;
                     line-height: 18px;
                     font-family: $titleFontFamily;
@@ -107,17 +106,17 @@
 
         .button {
             border: 0 none;
-            width: 250px;
+            width: 100%;
             height: 40px;
             transition: 0.4s;
             cursor: pointer;
             border-radius: 6px;
-            color: $textColor;
             font-family: $titleFontFamily;
             background: linear-gradient(145deg, #1e2024, #23272b);
             box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;;
             position: relative;
             z-index: 1;
+            color: $textColor;
             font-size: 14px;
             font-weight: 500;
             letter-spacing: 1px;

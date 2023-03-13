@@ -11,36 +11,45 @@ export const Contacts = () => {
                 <form className={style.contactsForm}>
                     <div className={style.blockInfo}>
                         <div>
-                            <label>Your name</label>
-                            <span>
-                                 <input type={'text'}/>
-                            </span>
+                            <div>
+                                <label>Your name</label>
+                            </div>
+                            <div>
+                                <input type={'text'}/>
+                            </div>
                         </div>
                     </div>
                     <div className={style.blockInfo}>
                         <div>
-                            <label>Phone number</label>
-                            <span>
-                                 <input type={'text'}/>
-                            </span>
+                            <div>
+                                <label>Phone number</label>
+                            </div>
+                            <div>
+                                <input type={'text'}/>
+                            </div>
                         </div>
                     </div>
                     <div className={style.blockInfo}>
                         <div>
-                            <label>Email</label>
-                            <span>
-                                 <input type={'text'}/>
-                            </span>
+                            <div>
+                                <label>Email</label>
+                            </div>
+                            <div>
+                                <input type={'text'}/>
+                            </div>
                         </div>
                     </div>
                     <div className={style.blockInfo}>
                         <div>
-                            <label>Your message</label>
+                            <div>
+                                <label>Your message</label>
+                            </div>
                             <textarea/>
                         </div>
                     </div>
+                    <button className={style.button}>Send message</button>
                 </form>
-                <button className={style.button}>Send message</button>
+
             </div>
         </div>
     );
