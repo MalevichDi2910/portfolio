@@ -1,3 +1,5 @@
+@import "../common/styles/sass/variables.scss";
+
 .nav {
    width: 300px;
    display: flex;
@@ -18,7 +20,7 @@
    }
 
    a:hover {
-      color: #ff014f;
+      color: $redColor;
    }
 
 }
