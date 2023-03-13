@@ -4,10 +4,34 @@
 .project {
     max-width: 500px;
     width: 100%;
-    background-color: $bgSecondColor;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 30px;
+    text-align: left;
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    z-index: 1;
+    height: 100%;
+    transition: 0.5s all ease-in-out;
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        padding: 30px;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        transition: 0.4s;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right bottom, #212428, #16181c);
+        opacity: 0;
+        z-index: -1;
+    }
 
     .image {
         height: 300px;
@@ -30,31 +54,30 @@
             right: 0;
             opacity: 0.4;
         }
-
-        .viewBtn {
-            height: 50px;
-            width: 100px;
-            background: $btnColor;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
     }
 
     .projectInfo {
         padding: 25px 20px;
 
-        .projectTitle {
-            @include text($titleFontFamily, 20px, 1.2, $textColor);
+        h3 {
+            @include text($textFontFamily, 12px, 1.2, $redColor);
+            font-weight: 400;
+            font-family: var(--font-primary);
             letter-spacing: 1px;
+            text-transform: uppercase;
+            display: inline-block;
             margin: 0;
         }
 
-        .description {
-            @include text($textFontFamily, 16px, 1.8, $primaryColor);
-            font-weight: 400;
+        span {
+            @include text($textFontFamily, 20px, 30px, $primaryColor);
+            font-weight: 600;
+            display: inline-block;
+            padding-top: 20px;
+            &:hover {
+                color: $redColor;
+                transition: 0.4s;
+            }
         }
     }
 }
