@@ -1,35 +1,65 @@
 @import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins";
 
 .footerBlock {
-    min-height: 50vh;
+    min-height: 30vh;
     background-color: $bgColor;
+
+    .footerContainer {
+        align-items: center;
+        flex-direction: column;
+
+        .footerSquares {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+
+            .square {
+                width: 60px;
+                height: 60px;
+                background-color: $bgColor;
+                background-size: cover;
+                line-height: 62px;
+                margin: 15px;
+                box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+                border-radius: 6px;
+                transition:  0.4s;
+                display: inline-block;
+                text-align: center;
+                font-size: 20px;
+                color: #c4cfde;
+
+                &:hover {
+                    background: $redColor;
+                    background-size: cover;
+                }
+            }
+        }
+
+        h2 {
+            color: $textColor;
+            letter-spacing: 1px;
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        h3 {
+            color: $textColor;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+    }
 }
 
-.footerContainer {
-    align-items: center;
-    flex-direction: column;
-}
 
-.title {
-    background-color: lightgrey;
-}
 
-.footerSquares {
-    max-width: 700px;
-    width: 100%;
-    border: 1px solid;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
 
-.square {
-    width: 100px;
-    height: 100px;
-    background-color: gray;
-}
 
-.footerText {
-    background-color: lightgrey;
-}
+
+
