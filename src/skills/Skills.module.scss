@@ -4,12 +4,14 @@
     min-height: 100vh;
     background-image: url("https://wallpaperaccess.com/full/1947484.jpg");
     background-size: cover;
+    padding: 100px 100px 0 100px;
 }
 
 .skillsContainer {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 .title {
