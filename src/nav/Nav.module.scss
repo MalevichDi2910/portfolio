@@ -1,10 +1,13 @@
 @import "../common/styles/sass/variables.scss";
 
 .nav {
-   width: 300px;
+   width: 400px;
    display: flex;
    justify-content: space-between;
    text-decoration: none;
+   @media screen and (max-width: 767px) {
+      width: 90%;
+   }
 
    a {
       text-decoration: none;
@@ -17,6 +20,9 @@
       font-family: "Montserrat", sans-serif;;
       display: inline-block;
       padding: 0.5rem 1rem;
+      @media screen and (max-width: 767px) {
+         font-size: 13px;
+      }
    }
 
    a:hover {
