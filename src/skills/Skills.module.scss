@@ -2,9 +2,20 @@
 
 .skillsBlock {
     min-height: 100vh;
+    position: relative;
     background-image: url("https://wallpaperaccess.com/full/1947484.jpg");
     background-size: cover;
-    padding: 100px 100px 0 100px;
+    padding: 100px 0;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.3);
+        z-index: 2;
+    }
 }
 
 .skillsContainer {
@@ -25,5 +36,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
+    @media screen and (max-width: 768px) {
+        width: 300px;
+        margin-bottom: 100px;
+    }
 }
 
