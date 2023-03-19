@@ -5,6 +5,7 @@ export const Nav = () => {
     return (
         <div className={style.nav}>
             <a href="">HOME</a>
+            <a href="">ABOUT</a>
             <a href="">SKILLS</a>
             <a href="">PROJECTS</a>
             <a href="">CONTACTS</a>
