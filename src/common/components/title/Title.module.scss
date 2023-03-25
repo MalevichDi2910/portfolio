@@ -12,7 +12,7 @@
     position: relative;
 
     h2 {
-        margin: 10px 0 40px 0;
+        word-break: break-word;
         @media screen and (max-width: 767px) {
             font-size: 40px;
             margin-top: 7px;
