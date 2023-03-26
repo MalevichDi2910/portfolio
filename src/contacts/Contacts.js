@@ -48,7 +48,10 @@ export const Contacts = () => {
                             <textarea/>
                         </div>
                     </div>
-                    <button className={style.button}>Send message</button>
+                    <div className={style.blockInfo}>
+                        <button className={style.button}>Send message</button>
+                    </div>
+
                 </form>
 
             </div>
