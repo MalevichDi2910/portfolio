@@ -2,7 +2,6 @@
 
 .title {
     font-family: "Montserrat", sans-serif;
-    margin: 7px;
     color: $textColor;
     font-size: 40px;
     font-weight: 700;
@@ -12,6 +11,8 @@
     position: relative;
 
     h2 {
+        margin: 15px 0 40px 0;
+        font-size: 60px;
         word-break: break-word;
         @media screen and (max-width: 767px) {
             font-size: 40px;
