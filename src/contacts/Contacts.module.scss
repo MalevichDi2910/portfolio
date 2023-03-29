@@ -70,7 +70,7 @@
                     margin-top: 10px;
                     &:focus {
                         outline: none;
-                        border: 2px solid #ff014f;
+                        border: 2px solid $redColor;
                     }
                 }
 
@@ -95,7 +95,7 @@
 
                     &:focus {
                         outline: none;
-                        border: 2px solid #ff014f;
+                        border: 2px solid $redColor;
                     }
                 }
                 .button {
