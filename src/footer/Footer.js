@@ -26,7 +26,7 @@ export const Footer = () => {
 
     return (
         <div className={style.footerBlock}>
-            <div className={`${styleContainer.container} ${style.footerContainer}`}>
+            <div className={style.footerContainer}>
                 <h3>You can find me here:</h3>
                 <div className={style.footerSquares}>
                     <a target={'_blank'} href="https://www.linkedin.com/in/diana-m-093620225/">
