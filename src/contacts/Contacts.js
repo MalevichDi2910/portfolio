@@ -6,47 +6,39 @@ import {Title} from "../common/components/title/Title";
 export const Contacts = () => {
     return (
         <div className={style.contactsBlock}>
-            <div className={`${styleContainer.container} ${style.contactsContainer}`}>
+            <div className={style.contactsContainer}>
                 <span>Contact</span>
                 <Title text={'Contact With Me'}/>
                 <form className={style.contactsForm}>
                     <div className={style.blockInfo}>
-                        <div>
                             <div>
                                 <label>Your name</label>
                             </div>
                             <div>
-                                <input type={'text'}/>
+                                <input className={style.formArea} type={'text'}/>
                             </div>
-                        </div>
                     </div>
                     <div className={style.blockInfo}>
-                        <div>
                             <div>
                                 <label>Phone number</label>
                             </div>
                             <div>
-                                <input type={'text'}/>
+                                <input className={style.formArea} type={'text'}/>
                             </div>
-                        </div>
                     </div>
                     <div className={style.blockInfo}>
-                        <div>
                             <div>
                                 <label>Email</label>
                             </div>
                             <div>
-                                <input type={'text'}/>
+                                <input className={style.formArea} type={'email'}/>
                             </div>
-                        </div>
                     </div>
                     <div className={style.blockInfo}>
-                        <div>
                             <div>
                                 <label>Your message</label>
                             </div>
-                            <textarea/>
-                        </div>
+                            <textarea className={style.messageArea}/>
                     </div>
                     <div className={style.blockInfo}>
                         <button className={style.button}>Send message</button>
