@@ -1,4 +1,5 @@
 @import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins.scss";
 
 .contactsBlock {
     min-height: 100vh;
@@ -9,6 +10,7 @@
     .contactsContainer {
         display: flex;
         flex-direction: column;
+        @include container();
 
         span {
             color: $subtitle;
@@ -55,49 +57,49 @@
                 text-align: left;
                 border-radius: 6px;
 
-                input {
-                    background: #191b1e;
+                .formArea,
+                .messageArea {
                     width: 100%;
-                    border-radius: 6px;
-                    height: 55px;
+                    background: #191b1e;
                     border: 2px solid #191b1e;
-                    font-size: 14px;
+                    border-radius: 6px;
                     font-family: $titleFontFamily;
+                    font-size: 14px;
                     color: $textColor;
                     box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
-                    letter-spacing: 1px;
                     transition: 0.4s;
+                    letter-spacing: 1px;
                     margin-top: 10px;
+                    //&:-webkit-autofill{
+                    //    border: 1px solid #4a4a4a;
+                    //    -webkit-text-fill-color: #495057;
+                    //    -webkit-box-shadow: 0 0 0 1000px #252527 inset;
+                    //    transition: background-color 5000s ease-in-out 0s;
+                    //    &:focus {
+                    //        border: 2px solid $redColor;
+                    //    }
+                    //}
                     &:focus {
                         outline: none;
                         border: 2px solid $redColor;
                     }
                 }
 
-                textarea {
+                .formArea {
+                    height: 55px;
+                    padding: 0 15px;
+                }
+
+                .messageArea {
                     min-height: 216px;
-                    width: 100%;
-                    background: #191b1e;
-                    border-radius: 6px;
-                    transition: 0.4s;
-                    border: 2px solid #191b1e;
-                    margin-top: 10px;
-                    font-size: 14px;
-                    line-height: 18px;
-                    font-family: $titleFontFamily;
-                    color: $textColor;
-                    box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
-                    letter-spacing: 1px;
+                    padding: 10px 15px;
+                    line-height: 20px;
                     resize: none;
                     @media screen and (max-width: 767px) {
                         min-height: 150px;
                     }
-
-                    &:focus {
-                        outline: none;
-                        border: 2px solid $redColor;
-                    }
                 }
+
                 .button {
                     border: 0 none;
                     width: 100%;
