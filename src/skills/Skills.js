@@ -3,6 +3,7 @@ import style from './Skills.module.scss';
 import styleContainer from '../common/styles/Container.module.css'
 import {Skill} from "./skill/Skill";
 import {Title} from "../common/components/title/Title";
+import Fade from 'react-reveal/Fade';
 import react from "../assets/image/react.svg";
 import javascript from "../assets/image/javascript.svg";
 import css3 from "../assets/image/css3.svg";
@@ -58,9 +59,11 @@ export const Skills = () => {
 
 
     return (
-        <div className={style.skillsBlock}>
-            <div className= {`${styleContainer.container} ${style.skillsContainer}`}>
-                <Title text={'My professional skills'}/>
+        <div id='skills' className={style.skillsBlock}>
+            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+                <Fade top>
+                    <Title text={'My professional skills'}/>
+                </Fade>
                 <div className={style.skills}>
                     <Skill style={reactIcon} title={'REACT'} />
                     <Skill style={reduxIcon} title={'REDUX'} />
