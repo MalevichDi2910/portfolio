@@ -1,14 +1,16 @@
 import React from "react";
 import style from './Contacts.module.scss';
-import styleContainer from '../common/styles/Container.module.css';
 import {Title} from "../common/components/title/Title";
+import Fade from 'react-reveal/Fade';
 
 export const Contacts = () => {
     return (
-        <div className={style.contactsBlock}>
+        <div id='contacts' className={style.contactsBlock}>
             <div className={style.contactsContainer}>
+                <Fade bottom>
                 <span>Contact</span>
                 <Title text={'Contact With Me'}/>
+                </Fade>
                 <form className={style.contactsForm}>
                     <div className={style.blockInfo}>
                             <div>
@@ -43,9 +45,7 @@ export const Contacts = () => {
                     <div className={style.blockInfo}>
                         <button className={style.button}>Send message</button>
                     </div>
-
                 </form>
-
             </div>
         </div>
     );
