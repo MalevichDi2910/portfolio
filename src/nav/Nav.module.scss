@@ -1,7 +1,6 @@
 @import "../common/styles/sass/variables.scss";
 
 .nav {
-   //width: 400px;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -22,10 +21,12 @@
       @media screen and (max-width: 767px) {
          font-size: 10px;
       }
+      &:hover {
+         color: $redColor;
+      }
    }
-
-   a:hover {
-      color: $redColor;
+   .active{
+      color: #ff014f;
    }
 
 }
