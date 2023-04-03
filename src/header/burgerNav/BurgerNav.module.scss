@@ -1,0 +1,74 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.burgerNav {
+   width: 100%;
+   height: 100%;
+
+   .burgerNavItems {
+      @include flex(column,space-between,center,nowrap);
+      background-color: $bgSecondColor;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      height: 0;
+      padding: 20px;
+      opacity: 0.9;
+      transform: translate(0, -150px);
+      transition: 0.7s ;
+
+      a {
+         text-decoration: none;
+         color: #c4cfde;
+         position: relative;
+         transition: 0.4s;
+         font-size: 15px;
+         font-weight: 400;
+         font-family: "Montserrat", sans-serif;;
+         display: inline-block;
+         padding: 0.5rem 1rem;
+         @media screen and (max-width: 767px) {
+            font-size: 10px;
+         }
+
+         &:hover {
+            color: $redColor;
+         }
+      }
+
+      .active {
+         color: #ff014f;
+      }
+   }
+
+   .show {
+      transform: translate(0, 0);
+      height:  150px;
+   }
+
+   .burgerBtn {
+      width: 40px;
+      height: 40px;
+      background: #1a1d23;
+      position: absolute;
+      top: 24px;
+      right: 20px;
+      border-radius: 50%;
+      span {
+         z-index: 800;
+         color: $redColor;
+         font-size: 23px;
+         position: relative;
+         transition: 0.5s;
+         left: 10px;
+         top: 3px;
+      }
+   }
+
+   @media screen and (min-width: 400px) {
+      display: none;
+   }
+}
+
+
