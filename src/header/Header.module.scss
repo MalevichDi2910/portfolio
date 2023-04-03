@@ -1,9 +1,16 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .header {
     height: 80px;
-    background-color: $bgColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0 30px;
+    background-color: #212428de;;
+    @include flex(row, center, center, nowrap);
+    animation: headerSlideDown 0.5s ease forwards;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    backdrop-filter: blur(15px);
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
 }
