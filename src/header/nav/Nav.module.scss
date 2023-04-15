@@ -1,12 +1,16 @@
-@import "../common/styles/sass/variables.scss";
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
 
 .nav {
    display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   @media screen and (max-width: 767px) {
-      width: 100%;
-   }
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: stretch;
+   flex-wrap: nowrap;
+
+   //@media screen and (max-width: 767px) {
+   //   width: 100%;
+   //}
 
    a {
       text-decoration: none;
@@ -18,15 +22,15 @@
       font-family: "Montserrat", sans-serif;;
       display: inline-block;
       padding: 0.5rem 1rem;
-      @media screen and (max-width: 767px) {
-         font-size: 10px;
-      }
       &:hover {
          color: $redColor;
       }
    }
    .active{
       color: #ff014f;
+   }
+   @media screen and (max-width: 400px) {
+      display: none;
    }
 
 }
