@@ -1,6 +1,6 @@
 import React from "react";
 import style from './Nav.module.scss';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export const Nav = () => {
     return (
@@ -12,8 +12,6 @@ export const Nav = () => {
                 offset={1}
                 duration={500}
             >HOME</Link>
-
-            <a href="">ABOUT</a>
 
             <Link activeClass={style.active}
                   to="skills"
