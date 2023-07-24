@@ -6,7 +6,7 @@ import Di from './../assets/image/Di.jpg';
 import { Tilt } from 'react-tilt'
 // import Particles from 'react-tsparticles';
 // import {loadFull} from 'tsparticles';
-// import {Particle} from "../common/components/particle/Particle";
+import {Particle} from "../common/components/particle/Particle";
 
 export const Main = () => {
 
@@ -28,7 +28,7 @@ export const Main = () => {
 
     return (
         <div id='main' className={style.mainBlock}>
-            {/*<Particle />*/}
+            <Particle />
             <div className={styleContainer.container}>
             <div className={style.greetings}>
                 <h1 className={style.title}>Hi, I'm
@@ -41,10 +41,19 @@ export const Main = () => {
                         text='a Frontend Developer.'
                     />
                 </h1>
+                    {/*<span className={style.description}>*/}
+                    {/*    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in maxime*/}
+                    {/*reprehenderit molestiae animi tenetur perferendis doloribus dolores, neque*/}
+                    {/*incidunt cum magni error eum quidem ex molestias amet enim fugiat!*/}
+                    {/*Illum alias eveniet pariatur, error, veniam vero doloremque necessitatibus*/}
+                    {/*cum nemo nulla, voluptatem repellendus eum? Amet autem quam, libero saepe*/}
+                    {/*nihil deserunt quidem voluptatum placeat voluptas voluptatibus, vitae, unde voluptate.*/}
+                    {/*</span>*/}
             </div>
-                <Tilt options={{max: 25}}>
+
+                {/*<Tilt options={{max: 25}}>*/}
                     <div style={me} className={style.photo}></div>
-                </Tilt>
+                {/*</Tilt>*/}
             </div>
         </div>
     );
