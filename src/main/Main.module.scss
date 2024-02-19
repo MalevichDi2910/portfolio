@@ -1,4 +1,5 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 .mainBlock {
   height: 100vh;
@@ -6,59 +7,69 @@
 
   .greetings {
     max-width: 600px;
-  }
-
-  .title {
-    font-family: "Montserrat", sans-serif;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 62px;
-    margin: 22px 0;
-    @media screen and (max-width: 767px) {
-      font-size: 50px;
-      line-height: 60px;
-    }
-    @media screen and (max-width: 479px) {
-      font-size: 32px;
-      line-height: 40px;
+    @media screen and (max-width: 1071px) {
+      margin-top: 60px;
     }
 
-    .name {
-      color: $redColor;
+    .title {
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
       font-weight: 600;
+      font-size: 50px;
+      line-height: 62px;
+      margin: 22px 0;
+      @media screen and (max-width: 767px) {
+        font-size: 50px;
+        line-height: 60px;
+      }
+      @media screen and (max-width: 479px) {
+        font-size: 32px;
+        line-height: 40px;
+      }
+
+      .name {
+        color: $redColor;
+        font-weight: 700;
+      }
+
+      .headerCaption{
+        font-size: 35px;
+        @media screen and (max-width: 767px) {
+          font-size: 20px;
+        }
+      }
     }
 
-    .headerCaption{
-      font-size: 35px;
-      @media screen and (max-width: 767px) {
-        font-size: 20px;
+    .btn{
+      position: relative;
+      width: 200px;
+      height: 46px;
+      border: 0 none;
+      margin-top: 100px;
+      transition: 0.4s;
+      cursor: pointer;
+      border-radius: 6px;
+      font-family: $titleFontFamily;
+      color: $textColor;
+      background: linear-gradient(145deg, $redColor, #23272b);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      &:hover {
+        transform: translateY(-5px);
       }
     }
   }
 
-  .description {
-    font-family: "Poppins", sans-serif;
-    color: $textColor;
-    width: 100%;
-    font-size: 16px;
-    display: inline-block;
-    text-align: justify;
-    line-height: 1.5;
-    word-spacing: -.4ch;
-    margin-bottom: 12px;
-  }
 
   .photo {
-    width: 350px;
-    height: 450px;
+    width: 480px;
+    height: 580px;
     display: flex;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
-
   }
 
 }
-
