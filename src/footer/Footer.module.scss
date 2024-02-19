@@ -41,6 +41,8 @@
                 &:hover {
                     background: $redColor;
                     background-size: cover;
+                    transform: translateY(-5px);
+
                 }
             }
         }

@@ -70,15 +70,6 @@
                     transition: 0.4s;
                     letter-spacing: 1px;
                     margin-top: 10px;
-                    //&:-webkit-autofill{
-                    //    border: 1px solid #4a4a4a;
-                    //    -webkit-text-fill-color: #495057;
-                    //    -webkit-box-shadow: 0 0 0 1000px #252527 inset;
-                    //    transition: background-color 5000s ease-in-out 0s;
-                    //    &:focus {
-                    //        border: 2px solid $redColor;
-                    //    }
-                    //}
                     &:focus {
                         outline: none;
                         border: 2px solid $redColor;
@@ -117,6 +108,10 @@
                     font-weight: 500;
                     letter-spacing: 1px;
                     text-transform: uppercase;
+
+                    &:hover {
+                        transform: translateY(-5px);
+                    }
                 }
             }
         }
