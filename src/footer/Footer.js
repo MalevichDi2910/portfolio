@@ -50,7 +50,7 @@ export const Footer = () => {
                     </a>
                     </Fade>
                 </div>
-                <h2>@ 2022 All rights reserved</h2>
+                <h2>@ 2023 All rights reserved</h2>
             </div>
         </div>
     );
