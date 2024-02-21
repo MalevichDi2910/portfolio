@@ -60,6 +60,9 @@
                 background: rgba(0,0,0,0.4);
                 backdrop-filter: blur(4px);
             }
+            .btn{
+                opacity: 1;
+            }
         }
 
     }
@@ -80,7 +83,7 @@
         text-transform: uppercase;
         position: absolute;
         left: 50%;
-        top: 34%;
+        top: 50%;
         transform: translate(-50%, -50%);
         opacity: 0;
     }
