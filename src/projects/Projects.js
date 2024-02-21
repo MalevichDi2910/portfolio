@@ -6,7 +6,7 @@ import {Title} from "../common/components/title/Title";
 import todoImage from './../assets/image/todo.jpg';
 import helloImage from './../assets/image/SN.jpg';
 import cardImage from './../assets/image/card.jpg'
-import Fade from 'react-reveal/Fade';
+import {Zoom} from 'react-awesome-reveal';
 
 export const Projects = () => {
 
@@ -25,9 +25,9 @@ export const Projects = () => {
     return (
         <div id='projects' className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <Fade bottom>
+                <Zoom>
                     <Title text={'Projects'} primaryText={'visit my portfolio and keep your feedback'}/>
-                </Fade>
+
                 <div className={style.projects}>
                     <Project style={hello} title={'Social network'}
                              description={'Social Network is an online platform that allows people to create an account and interact with other people on the website.'}/>
@@ -40,6 +40,7 @@ export const Projects = () => {
                                  ' or work tasks which can help manage tasks effectively and improve time management.'}/>
 
                 </div>
+                </Zoom>
             </div>
         </div>
     );
