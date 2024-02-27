@@ -3,7 +3,7 @@ import style from "./Projects.module.scss";
 import styleContainer from "../common/styles/Container.module.css";
 import {Project} from "./project/Project";
 import {Title} from "../common/components/title/Title";
-import todoImage from './../assets/image/todo.jpg';
+import todoImage from './../assets/image/todo.png';
 import helloImage from './../assets/image/SN.jpg';
 import cardImage from './../assets/image/card.jpg'
 import {Zoom} from 'react-awesome-reveal';
