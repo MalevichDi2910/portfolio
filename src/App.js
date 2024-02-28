@@ -6,7 +6,6 @@ import {Skills} from "./skills/Skills";
 import {Projects} from "./projects/Projects";
 import {Contacts} from "./contacts/Contacts";
 import {Footer} from "./footer/Footer";
-import {GlobalToast} from "./common/components/toast/toast";
 
 export const App = () => {
     return (
@@ -17,7 +16,6 @@ export const App = () => {
             <Projects/>
             <Contacts/>
             <Footer/>
-            <GlobalToast/>
         </div>
     );
 }
