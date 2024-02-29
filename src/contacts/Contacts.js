@@ -24,8 +24,10 @@ export const Contacts = () => {
                         type={"text"}
                         onChange={formik.handleChange}
                     />
+                    {formik.errors.name && formik.touched.name &&
+                        <div className={style.error}>{formik.errors.name}</div>}
                 </div>
-                {formik.errors.name && formik.touched.name && <div className={style.error}>{formik.errors.name}</div>}
+
 
                 <div className={style.blockInfo}>
                     <label>Email</label>
@@ -34,11 +36,12 @@ export const Contacts = () => {
                         name={"email"}
                         className={style.formArea}
                         value={formik.values.email}
-                        type={"email"}
                         onChange={formik.handleChange}
                     />
+                    {formik.errors.email && formik.touched.email &&
+                        <div className={style.error}>{formik.errors.email}</div>}
                 </div>
-                {formik.errors.email && formik.touched.email && <div className={style.error}>{formik.errors.email}</div>}
+
 
                 <div className={style.blockInfo}>
                     <label>Message</label>
@@ -49,8 +52,10 @@ export const Contacts = () => {
                         onChange={formik.handleChange}
                         className={style.messageArea}
                     />
+                    {formik.errors.message && formik.touched.message &&
+                        <div className={style.error}>{formik.errors.message}</div>}
                 </div>
-                {formik.errors.message && formik.touched.message && <div className={style.error}>{formik.errors.message}</div>}
+
 
                 <div className={style.blockInfo}>
                     <button type={"submit"} className={style.button} disabled={onDisabled}>
