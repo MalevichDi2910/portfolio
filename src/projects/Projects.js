@@ -34,7 +34,7 @@ export const Projects = () => {
 
                     <Project style={card} title={'Flashcards'}
                              description={'Flashcards is an online platform for creating your own flashcards for learning and memorization.' +
-                                 ' Cards can be for learning foreign words, cards on programming or any other subject or topic.'}/>
+                                 ' Cards can be for learning foreign words, programming and etc.'}/>
                     <Project style={todo} title={'Task tracker'}
                              description={'Task tracker is an online platform for organizing your personal' +
                                  ' or work tasks which can help manage tasks effectively and improve time management.'}/>
