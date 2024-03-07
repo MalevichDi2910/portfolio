@@ -5,7 +5,7 @@ export const Project = (props) => {
 
     return (
         <div className={style.project}>
-            <div className={style.image} style={props.style}><button className={style.btn}>view project</button></div>
+            <div className={style.image} style={props.style}><button><a href={props.link} className={style.link} target={'_blank'}>view project</a></button></div>
             <div className={style.projectInfo}>
                 <h3>{props.title}</h3>
                 <div>

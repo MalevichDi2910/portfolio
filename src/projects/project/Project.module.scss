@@ -60,18 +60,20 @@
                 background: rgba(0,0,0,0.4);
                 backdrop-filter: blur(4px);
             }
-            .btn{
+            .link{
                 opacity: 1;
             }
         }
 
     }
 
-    .btn {
+    .link {
+        text-decoration: none;
         width: 140px;
         height: 36px;
         border: 0 none;
         transition: 0.4s;
+        padding-top: 10px;
         cursor: pointer;
         border-radius: 6px;
         font-family: $titleFontFamily;
